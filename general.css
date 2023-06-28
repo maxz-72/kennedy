@@ -114,8 +114,6 @@ body{
 
 /*-----------FOOTER--------------*/
 .footer{
-  
-  position: fixed;
   bottom: 0;
   background-color: #0e0e0e;
   width: 100%;
