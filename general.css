@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 *{
  margin: 0;
  padding: 0;
  box-sizing: border-box;
- font-family: "Poppins", sans-serif;
+
 }
 
 body{
  min-height: 100vh;
- background-color: #0f0f0f;
+ background-color: #1a1a1a;
 }
 
 /*MENU DE HAMBURGUESA*/
 
 .side-bar{
+ font-family: "Poppins", sans-serif;
  background: rgba(0, 0, 0, );
  backdrop-filter: blur(15px);
  width: 290px;
@@ -100,14 +102,6 @@ body{
 
 /*SECTION  */
 
-.main{
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 
 /*RESPONSIVE NAV NAR*/
 
@@ -118,3 +112,69 @@ body{
  }
 }
 
+/*-----------FOOTER--------------*/
+.footer{
+  
+  position: fixed;
+  bottom: 0;
+  background-color: #0e0e0e;
+  width: 100%;
+  border-top: 1px solid #f3f4f4;
+}
+/* cajas de footer*/
+.footer__conteiner{
+  display: grid;
+  margin: auto;
+  max-width: 1300px;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  padding: 30px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer__box{
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  min-width: 130px;
+  flex-grow: 1;
+  margin: 20px 0;
+}
+/*caja de img*/
+.footer__contimg{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__img{
+  height: 217px;
+  width: 190px;
+  object-fit: contain;
+}
+.footer__h2{
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.footer__ul{
+  list-style: none;
+  color: #8996a0;
+  
+}
+
+.footer__2do-item a, .footer__1er-item a{
+  display: inline-block;
+  text-decoration: none;
+  color: #8996a0;
+  padding: 5px 0px;
+  font-size: 17px;
+  font-weight: 100;
+}
+.footer__2do-item a:hover, .footer__1er-item a:hover{
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  transition: .5s;
+}
