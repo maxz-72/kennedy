@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  width: 60%;
+  position: relative;
+  display: flex;
+  margin: 1em;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #000000;
+  border-right: none;
+  padding: 5px;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 1.54em;
+  border: 1px solid #000000;
+  background: #000000;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+.imgct {
+  overflow: hidden;
+  margin-right: 0px;
+  margin-left: 23px;
+  margin-top: 0px;
+  float: left;
+  position: absolute;
+}
+
+.imgct img {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 60px;
+  border: 3px solid #fff;
+  float: left;
+}
+
+
+
+.bookshelf {
+  width: 900px;
+  margin: 5rem auto;
+  text-align: center;
+  position: relative;
+}
+
+.bookshelf.first{
+  margin-top:2em;
+}
+
+
+
+.book-grid {
+  z-index: 2;
+  position: relative;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+.book-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.book-grid ul li {
+  justify-self: center;
+}
+.book-grid ul img {
+  display: block;
+  box-shadow: 3px 5px 18px 2px rgba(0, 0, 0, 0.6);
+  width: 200px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.shelf-shadows {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  border-radius: 2px;
+  z-index: 1;
+  box-shadow: 0px -5px 3px 0px rgba(3, 29, 39, 0.83), 0px 15px 20px 0px rgba(3, 29, 39, 0.83), 0px 5px 5px 0px rgba(3, 29, 39, 0.83);
+}
+
+.shelf {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  background-color: #747373;
+  border-radius: 2px;
+  z-index: 3;
+}

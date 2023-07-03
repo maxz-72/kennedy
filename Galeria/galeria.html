@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>John F. Kennedy</title>
+   <link rel="icon" href="../img/logo0.png">
+   <link rel="stylesheet" href="../general.css">
+   <link rel="stylesheet" href="../css/galeria.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+ </head>
+ <body>
+    <header>
+        <div class="menu-btn" id="menu-img">
+          <div class="menu-img">
+            <img src="../img/logo.png" alt="">
+          </div>
+          <i class="fas fa-bars"></i>
+          </div>
+          <div class="side-bar">
+            <div class="close-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <div class="menu">
+              <div class="item"><a href="../index.html"><i class="fas fa-desktop"></i>Inicio</a></div>
+              <div class="item">
+                <a class="sub-btn"><i class="fas fa-table"></i>Especialidades<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                  <a href="../Especialidades/programacion/programacion.html" class="sub-item">Programación</a>
+                  <a href="../Especialidades/informatica/informatica.html" class="sub-item">Informatica</a>
+                  <a href="../Especialidades/electromecanica/electro.html" class="sub-item">Electromecánica</a>
+                </div>
+              </div>
+              <div class="item"><a href="#"><i class="fa fa-comments"></i>Foro</a></div>
+              <div class="item"><a href="../biblioteca/biblioteca.html"><i class="fa fa-folder-open"></i>Biblioteca</a></div>
+              <div class="item">
+                <a class="sub-btn"><i class="fa fa-university"></i>Escuela<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                  <a href="../Historia/historia.html" class="sub-item">Historia</a>
+                  <a href="../Galeria/galeria.html" class="sub-item">Galeria</a>
+                </div>
+              </div>
+              <div class="item"><a href="#"><i class="fa fa-user"></i>Conctacto</a></div>
+            </div>
+          </div>
+          <div class="sub-header">
+            <h1 class="title-tec scroll-text">GALERIA DE FOTOS</h1>
+          </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="heading">
+              <h3 class="title-h3">LA ESCUELA</h3>
+            </div>   
+            <div class="container-img">
+                <div class="img">
+                    <img src="fotos-gale/0.jpeg" alt="">
+                </div>
+                <div class="img">
+                    <img src="fotos-gale/1.jpeg" alt="">
+                </div>
+                <div class="img">
+                    <img src="fotos-gale/2.jpeg" alt="">
+                </div>
+                <div class="img">
+                    <img src="fotos-gale/3.jpeg" alt="">
+                </div>
+                <div class="img">
+                    <img src="fotos-gale/4.jpeg" alt="">
+                </div>
+                <div class="img">
+                    <img src="fotos-gale/5.jpeg" alt="">
+                </div>
+                <div class="img">
+                    <img src="fotos-gale/6.jpeg" alt="">
+                </div>
+                <div class="img">
+                    <img src="fotos-gale/7.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="fotos-gale/8.jpg" alt="">
+            </div>
+            </div>     
+        </div>
+   </section> 
+    
+
+
+   <footer class="footer">
+      <div class="footer__conteiner">
+        <div class="footer__box">
+          <figure class="footer__contimg">
+              <img class="footer__img" src="../img/logo1.png">
+          </figure>
+      </div>
+        <div class="footer__box">
+            <h2 class="footer__h2">Redes Sociales</h2>
+            <ul class="footer__ul">
+                <li class="footer__1er-item"><a href="https://www.facebook.com/profile.php?id=100000755543895" target="_blank">Facebook</a></li>
+                <li class="footer__1er-item"><a href="https://www.instagram.com/escuelatecnica5lanus/?next=%2F" target="_blank">Instagram</a></li>
+                <li class="footer__1er-item"><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBzDMLffdnFrgKFlGmqBpmkfHbDkljwwWdmxXZnVbXXJRNLxTzbDCktZJPdmXlwMdFXWxH" target="_blank">E-mail</a></li>
+            </ul>
+        </div>
+        <div class="footer__box">
+          <h2 class="footer__h2">Qué Estudiar</h2>
+          <ul class="footer__ul">
+              <li class="footer__1er-item"><a href="../Especialidades/programacion/programacion.html" target="_blank">Programación</a></li>
+              <li class="footer__1er-item"><a href="../Especialidades/informatica/informatica.html" target="_blank">Informatica</a></li>
+              <li class="footer__1er-item"><a href="../Especialidades/electromecanica/electro.html" target="_blank">Electromecánica</a></li>
+          </ul>
+      </div>
+        <div class="footer__box">
+            <h2 class="footer__h2">Contacto</h2>
+            <ul class="footer__ul">
+              <li class="footer__2do-item"><a href="#">(+54) 9 11 4241-8547</a></li>
+               <li class="footer__2do-item"><a href="#">4240-5026</a></li>
+            </ul>
+        </div>
+      </div>
+   </footer>
+
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+ </body>
+</html>

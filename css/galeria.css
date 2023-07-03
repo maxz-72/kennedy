@@ -1,0 +1,82 @@
+header{
+    background: url(../img/fondo2Celes.jpg);
+    background-position: 50%;
+    background-size: cover;
+}
+
+.sub-header{
+    /*background: linear-gradient(90deg, #0720ad, rgba(7, 18, 173, 0.6));*/
+    min-height: 30vh;
+    color: #ffffff;
+}
+
+#menu-img{
+  background: none;
+  /*background: linear-gradient(90deg,#0720ad,rgba(7, 18, 173, 0.6));*/
+}
+
+  .title-tec{
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-left: 180px;
+    padding-top: 100px;
+    padding-left: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+/*----------GALERIAD DE FOTOS---------*/
+.container .heading{
+    font-size: 48px;
+    margin: 32px 0;
+    color: #fff;
+    text-align: center;
+}
+.container-img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+}
+.container-img .img{
+    height: 15rem;
+    width: 25rem;
+    margin: 32px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.container-img .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+}
+.container-img .img img:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+@media (max-width: 768px) {
+  .title-tec{
+    font-size: 30px;
+    margin: 10px;
+    padding-left: 0;
+    text-align: center;
+  } 
+}
+@media (max-width: 915px) {
+  .title-tec{
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+.title-h3{
+  text-align: center;
+  margin: 5px;
+  font-weight: 500;
+  font-size: 45px;
+}

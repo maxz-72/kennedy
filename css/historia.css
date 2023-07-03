@@ -1,0 +1,29 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background-color: #fff;
+  margin: 2em 5em;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.card-info h2 {
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px;
+}
+
+.card-info p {
+  color: #353434;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 915px) {
+  .card{
+    margin: 1em;
+  }
+}

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/*fondo color*/
+header{
+  background: url(../img/fondoAzul.png);
+  background-position: 50%;
+  background-size: cover;
+}
+
+#menu-img{
+  background: none;
+  /*background: linear-gradient(90deg,#0720ad,rgba(7, 18, 173, 0.6));*/
+}
+.sub-header{
+  /*background: linear-gradient(90deg, #0720ad, rgba(7, 18, 173, 0.6));*/
+  min-height: 20vh;
+  color: #fff;
+}
+.title-tec{
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  margin-left: 180px;
+  padding-top: 90px;
+  padding-left: 70px;
+}
+/*SECCION DE PESTAÑAS*/
+section{
+  height: auto;
+}
+.wrapper {
+	box-sizing: border-box;
+	padding-top: 1%;
+  padding-bottom: 7%;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
+	max-width: 145vh;
+	margin: 0 auto;
+}
+.box {
+	display: flex;
+	flex-wrap: wrap;
+  margin: 15px;
+  box-shadow: 0 2px 5px 0 rgb(0, 0, 0);
+}
+.box label {
+  color: #fff;
+	background:  #222222;
+	text-align: center;
+	order: 1;
+	display: flex;
+  flex: 1 1 auto;
+	padding: 16px 10px;
+  justify-content: center;
+	cursor: pointer;
+}
+.box .content {
+  color: #fff;
+	display: none;
+	background: #222222;
+	order: 99;
+	flex-grow: 1;
+	width: 100%;
+    
+}
+.box input[type="radio"] {
+	display: none;
+    
+}
+.box input[type="radio"]:checked+label {
+	color: rgb(39, 89, 255);
+  border-bottom: 3px solid rgb(38, 89, 255);
+  transition: all .3s ease;
+}
+.box input[type="radio"]:checked+label+.content {
+	display: block;
+}
+@media (max-width: 915px) {
+  .title-tec{
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+	.box .content, .box label {
+		order: initial;
+	}
+	.box label {
+		width: 100%;
+		margin-right: 0;
+		margin-top: 4px;
+	}
+  .title-tec{
+    font-size: 30px;
+    margin: 10px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .box label{
+    background: rgb(39, 89, 255);
+  }
+  .box input[type="radio"]:checked+label {
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(38, 89, 255);
+    transition: all .3s ease;
+  }
+  
+}
+
+.title-h3{
+  text-align: center;
+  margin: 15px;
+  font-weight: 500;
+}
+
+/*ACORDEON DE PLAN DE ESTUDIO*/
+.accordion {
+  width: 100%;
+  margin: 0 auto;
+}
+.accordion-item {
+  background-color: #222222;
+  color: #ffffff;
+  box-shadow: 0 2px 5px 0 rgb(0, 0, 0);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 4rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+  .primer-formacion{
+    font-size: 21px;
+  }
+}
+/*CONTENIDO DEL PLAN DE ESTUDIO*/
+.content-ul{
+  font-family: 'Montserrat', sans-serif;
+
+}
+.primer-formacion{
+  color: #fff;
+  font-weight: 500;
+  font-size: 25px;
+  padding-left: 18px;
+
+}
+.fa-regular, .far{
+  font-weight: 501!important;
+}
+.fa-angles-right{
+  color: #f00030;
+  font-weight: 501;
+  padding: 10px;
+}
+.primer-formacion--ul{
+  color: #fff;
+  list-style: none;
+  padding: 12px;
+}
+
+@media(max-width:767px) {
+  .primer-formacion{
+    font-size: 21px;
+  }
+}
+
+/*CONTENIDO PLAN DE ESTUDIO*/
+.content-p{
+  margin: 0 15px 25px 15px;
+}
+.content-p p{
+  padding: 10px 20px;
+}
+
